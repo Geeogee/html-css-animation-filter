@@ -87,7 +87,7 @@
 /* Exercise 10 */
 .ex-10-icon {
   animation-name: loading-effect;
-  animation-duration: 2s;
+  animation-duration: 1s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   animation-direction: reverse;
@@ -101,6 +101,26 @@
   100% {
     transform: rotate(360deg);
   }
+}
 
+/* Exercise 12 */
+.ex-11-icon:hover {
+  animation-name: loading-effect-2;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
 
+@keyframes loading-effect-2 {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  90% {
+    transform: rotate(270deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
 }
