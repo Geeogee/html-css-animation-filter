@@ -124,3 +124,46 @@
     transform: rotate(0deg);
   }
 }
+
+/* Exercise 13 */
+.ex-12-button:hover .ex-12-top-white {
+  animation-name: top-move;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+
+.ex-12-button:hover .ex-12-bottom-white {
+  animation-name: bottom-move;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+
+@keyframes top-move {
+  0% {
+    left: 10%;
+  }
+
+  50% {
+    left: calc(100% - 60px);
+  }
+
+  100% {
+    left: calc(10%);
+  }
+}
+
+@keyframes bottom-move {
+  0% {
+    right: 20%;
+  }
+
+  50% {
+    right: calc(100% - 60px);
+  }
+
+  100% {
+    right: 20%;
+  }
+}
