@@ -81,5 +81,26 @@
   transform: scale(1.5);
   border-radius: 20px;
   filter: sepia(0.5) grayscale(0.5);
-  max-width: 100%;
+}
+
+
+/* Exercise 10 */
+.ex-10-icon {
+  animation-name: loading-effect;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: reverse;
+}
+
+@keyframes loading-effect {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+
+
 }
